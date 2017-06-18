@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .fdiv{
+            width: 400px;
+            border: 1px solid #27AE60;
+        }
+        .common{
+            width: 160px;
+            height: 100px;
+            border: 1px solid #178fe5;
+        }
+        .left{
+             float: left;
+        }
+        .right{
+            float: right;
+        }
+        .fdiv:after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="fdiv">
+        <div class="common left"></div>
+        <div id="next" class="common right"></div>
+    </div>
+</body>
+</html>
